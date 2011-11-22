@@ -1,0 +1,7 @@
+---
+depends:
+files:
+  - js/SJSO.js
+asking:
+  false:
+    bool: false
