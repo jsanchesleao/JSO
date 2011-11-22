@@ -9,7 +9,7 @@ function SJSO(clazz){
 		};
 		this._clazz = SJSO[clazz];
 		this._clazz.build = SJSO.DEFAULTBUILD;
-		this._clazz.prototype.__defineGetter__("super", function(){ return SJSO[this.meta.super]; });
+		this._clazz.prototype.__defineGetter__("super", function(){ return this.meta.super; });
 		this._clazz.prototype.meta = [];
 		this._clazz.prototype.meta.attributes = {};
 		this._clazz.prototype.meta.methods = {};

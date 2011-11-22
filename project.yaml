@@ -1,6 +1,8 @@
 ---
 depends:
 files:
+  - js/SJSO.ATTRIBUTE.js
+  - js/SJSO.METHOD.js
   - js/SJSO.js
 asking:
   false:
