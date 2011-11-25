@@ -1,9 +1,7 @@
 ---
 depends:
 files:
-  - js/SJSO.ATTRIBUTE.js
-  - js/SJSO.METHOD.js
-  - js/SJSO.js
+  - js/main.js
 asking:
   false:
-    bool: false
+    bool: false;
