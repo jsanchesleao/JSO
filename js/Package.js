@@ -13,7 +13,14 @@ JSO.Class = function(pkg, name){
 };
 
 JSO.Package = function(name){
-	this.name = name;
+	var parsed_name = name.split(/\./);
+
+	this.qualified_name = parsed_name.join(".");
+	this.name = parsed_name.shift();
+
+	if( parsed_name[0] ) this[parsed_name[0]] = new JSO.Package( parsed_name.join(".") );
+
+	window[ this.qualified_name ] = this;
 	this.symbols = {};
 };
 
